@@ -16,7 +16,7 @@ productService.create({
 const products = productService.getAll();
 const firstProduct = products[0];
 
-productService.updated(firstProduct.id, {
+productService.update(firstProduct.id, {
   title: 'Product 1 Updated',
 });
 
