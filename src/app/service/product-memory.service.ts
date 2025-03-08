@@ -5,6 +5,10 @@ import { faker } from "@faker-js/faker";
 export class ProductMemoryService {
   private products: Product[] = [];
 
+  getAll() {
+    return this.products;
+  }
+
   create (data: CreateProductDto): Product {
     const newProduct = {
       ...data,
