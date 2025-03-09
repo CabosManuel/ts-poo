@@ -1,3 +1,8 @@
+export enum AccesType {
+  PRIVATE = 'private',
+  PUBLIC = 'public',
+}
+
 export interface Category {
   id:         number;
   name:       string;
@@ -5,4 +10,5 @@ export interface Category {
   image:      string;
   creationAt: Date;
   updatedAt:  Date;
+  access?: AccesType;
 }
